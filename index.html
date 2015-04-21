@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+<head>
+	<title>Inspierirende Fragen, Serenize.me</title>
+</head>
 <body>
-	<h1>Ist die Realität zeitgemäß?</h1>
+	<h1 id="question">Ist die Realität zeitgemäß?</h1>
+	<script>
+		var questions = [
+			"Ist die Realität zeitgemäß?",
+			"Ist die Apokalypse frauenverachtend?",
+			"Ist Zukunft scheiße?",
+			"Ist Landflucht völlig überbewertet?"
+		]
+		var randomNumber = Math.floor(Math.random() * questions.length)
+		var headline = document.getElementById("question")
+		headline.innerHTML = questions[randomNumber]
+	</script>
 </body>
