@@ -26,5 +26,6 @@ var questions = [
   "In welchem Augenblick ist mein Problem entstanden?",
   "Wen könnte ich um Rat bitten?",
   "Warum ist das Problem da?",
-  "Bin ich am richtigen Problem dran oder nur an einem Symptom?"
+  "Bin ich am richtigen Problem dran oder nur an einem Symptom?",
+  "Kenne ich das Spielfeld gut, in dem ich mich befinde?"
 ]
