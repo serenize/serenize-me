@@ -79,6 +79,7 @@ body {
 
 h1 {
   font-family: inherit;
+  font-size: 30pt;
   font-weight: 500;
   line-height: 1.1;
   text-shadow: -1px 1px 0 #000;
@@ -92,8 +93,9 @@ body {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
-a:hover {
-  color: grey;
+a:visited {
+  color: white;
 }
