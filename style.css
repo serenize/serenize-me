@@ -25,7 +25,7 @@
 }
 .logo-container {
   bottom: 5px;
-  right: 5px;
+  right: 10px;
   height: 70px;
   line-height: 70px;
   position: absolute;
@@ -33,6 +33,21 @@
 
 .logo {
   height: 70px;
+}
+
+.footer .links {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  margin-left: 10px;
+}
+
+.footer .links a {
+  color: black;
+  margin-right: 10px;
 }
 
 body {
