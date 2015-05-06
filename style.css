@@ -58,6 +58,8 @@
   transform: translateY(-50%);
 
   margin-left: 10px;
+
+  max-width: 50%;
 }
 
 .footer .links a {
