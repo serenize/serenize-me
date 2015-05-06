@@ -37,5 +37,14 @@ var questions = [
   "Bin ich bei der Sache?",
   "Bin ich konzentriert?",
   "Welches Risiko bin ich bereit einzugehen?",
-  "Welche längerfristigen Folgen hat mein Tun?"
+  "Welche längerfristigen Folgen hat mein Tun?",
+  "Was tue ich am liebsten?",
+  "Passt meine aktuelle Aufgabe zu meiner eigenen Lebensvision?",
+  "Was muss zunächst abgeschlossen oder erledigt werden?",
+  "Habe ich noch offene Kommunikation?",
+  "Was hilft mir neue Sichtweisen zu entwickeln?",
+  "Welchen Beitrag könnte ich jetzt dringend gebrauchen? Wie komme ich daran?",
+  "Was brauche ich?",
+  "Was hindert mich gerade?",
+  "Auf was könnte ich am leichtesten verzichten?"
 ]
