@@ -27,5 +27,15 @@ var questions = [
   "Wen könnte ich um Rat bitten?",
   "Warum ist das Problem da?",
   "Bin ich am richtigen Problem dran oder nur an einem Symptom?",
-  "Kenne ich das Spielfeld gut, in dem ich mich befinde?"
+  "Kenne ich das Spielfeld gut, in dem ich mich befinde?",
+  "Für welches Problem suche ich gerade nach einer Lösung?",
+  "Bin ich auf dem richtigen Weg?",
+  "Was muss ich mir noch aneigenen, um mein Problem zu lösen?",
+  "Sage ich zu oft \"Ich versuche ...\" anstatt zu sagen: \"Ich werde ...\"?",
+  "Übernehme ich die Verantwortung für mein Handeln und Nichthandeln?",
+  "Bin ich ausgeschlafen genug für das, was ich mir vornehme?",
+  "Bin ich bei der Sache?",
+  "Bin ich konzentriert?",
+  "Welches Risiko bin ich bereit einzugehen?",
+  "Welche längerfristigen Folgen hat mein Tun?"
 ]
