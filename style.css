@@ -22,6 +22,7 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: url("chess.jpg") center 20%;
+  border: 1px solid #222;
 }
 
 .footer {
@@ -60,8 +61,10 @@
 }
 
 .footer .links a {
-  color: black;
+  font-size: 10pt;
   margin-right: 10px;
+  text-decoration: none;
+  color: #dadada;
 }
 
 body {
