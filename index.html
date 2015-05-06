@@ -8,23 +8,23 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	</head>
 	<body>
-		<div class="main">
+		<div class="container">
 			<div class="question-box">
 				<h1 id="question">Was ist das Problem?</h1>
 				<a href="#" onclick="javascript:generate()"><i class="fa fa-2x fa-refresh"></i></a>
 			</div>
+			<footer class="footer">
+				<div class="links">
+					<a href="https://serenize.com/impressum">Impressum</a>
+					<a href="https://serenize.com/kontakt">Kontakt</a>
+				</div>
+				<div class="logo-container">
+					<a href="https://serenize.com">
+						<img src="logo.png" class="logo">
+					</a>
+				</div>
+			</footer>
 		</div>
-		<footer class="footer">
-			<div class="links">
-				<a href="https://serenize.com/impressum">Impressum</a>
-				<a href="https://serenize.com/kontakt">Kontakt</a>
-			</div>
-			<div class="logo-container">
-				<a href="https://serenize.com">
-					<img src="logo.png" class="logo">
-				</a>
-			</div>
-		</footer>
 		<script>
 			var generate = function() {
 				var randomNumber = Math.floor(Math.random() * questions.length)
