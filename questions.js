@@ -22,5 +22,9 @@ var questions = [
   "Warum bin ich auf dieser Seite?",
   "Unter welchen Bedingungen kann ich am besten über etwas nachdenken?",
   "Was würde mir ein Kollege jetzt raten?",
-  "Welcher Lösungsansatz hat sich bei dem letzten Problem bewährt?"
+  "Welcher Lösungsansatz hat sich bei dem letzten Problem bewährt?",
+  "In welchem Augenblick ist mein Problem entstanden?",
+  "Wen könnte ich um Rat bitten?",
+  "Warum ist das Problem da?",
+  "Bin ich am richtigen Problem dran oder nur an einem Symptom?"
 ]
