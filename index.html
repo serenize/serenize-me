@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<head>
-	<title>Inspirierende Fragen - Serenize!me</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="questions.js"></script>
-</head>
-<body>
-	<div class="main">
-		<div class="question-box">
-			<h1 id="question">Was ist das Problem?</h1>
-			<a href="#" onclick="javascript:generate()"><i class="fa fa-2x fa-refresh"></i></a>
+<html lang="de">
+	<head>
+		<title>Inspirierende Fragen - Serenize!me</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="questions.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<div class="main">
+			<div class="question-box">
+				<h1 id="question">Was ist das Problem?</h1>
+				<a href="#" onclick="javascript:generate()"><i class="fa fa-2x fa-refresh"></i></a>
+			</div>
 		</div>
-	</div>
-	<footer class="footer">
-		<div class="links">
-			<a href="https://serenize.com/impressum">Impressum</a>
-			<a href="https://serenize.com/kontakt">Kontakt</a>
-		</div>
-		<div class="logo-container">
-			<a href="https://serenize.com">
-				<img src="logo.png" class="logo">
-			</a>
-		</div>
-	</footer>
-	<script>
-		var generate = function() {
-			var randomNumber = Math.floor(Math.random() * questions.length)
-			var headline = document.getElementById("question")
-			headline.innerHTML = questions[randomNumber]
-		}
+		<footer class="footer">
+			<div class="links">
+				<a href="https://serenize.com/impressum">Impressum</a>
+				<a href="https://serenize.com/kontakt">Kontakt</a>
+			</div>
+			<div class="logo-container">
+				<a href="https://serenize.com">
+					<img src="logo.png" class="logo">
+				</a>
+			</div>
+		</footer>
+		<script>
+			var generate = function() {
+				var randomNumber = Math.floor(Math.random() * questions.length)
+				var headline = document.getElementById("question")
+				headline.innerHTML = questions[randomNumber]
+			}
 
-		generate();
+			generate();
+		</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-60993296-2', 'auto');
+		  ga('send', 'pageview');
 	</script>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-60993296-2', 'auto');
-	  ga('send', 'pageview');
-</script>
-</body>
+	</body>
+</html>
