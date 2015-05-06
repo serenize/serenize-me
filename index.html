@@ -3,11 +3,12 @@
 	<title>Inspierirende Fragen, Serenize.me</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
+	<script src="questions.js"></script>
 </head>
 <body>
 	<div class="main">
 		<div class="question-box">
-			<h1 id="question">Ist die Realität zeitgemäß?</h1>
+			<h1 id="question">Was ist das Problem?</h1>
 			<a href="#" onclick="javascript:generate()"><i class="fa fa-2x fa-refresh"></i></a>
 		</div>
 	</div>
@@ -23,15 +24,6 @@
 		</div>
 	</footer>
 	<script>
-		var questions = [
-			"Ist die Realität zeitgemäß?",
-			"Ist die Apokalypse frauenverachtend?",
-			"Ist Zukunft scheiße?",
-			"Ist Landflucht völlig überbewertet?",
-			"Ist Wahrheit völlig überbewertet?",
-			"Wann habe ich das letzte Mal intensiv über dieses Problem nachgedacht?"
-		]
-
 		var generate = function() {
 			var randomNumber = Math.floor(Math.random() * questions.length)
 			var headline = document.getElementById("question")
