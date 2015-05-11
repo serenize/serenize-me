@@ -118,5 +118,9 @@ var questions = [
   "Bekomme ich genügend Rückhalt aus meiner Umgebung?",
   "Gibt es Werkzeuge, die mir bei der Lösung des Problems helfen?",
   "Welche Werkzeuge helfen bei der Lösung meines Problems?",
-  "Was möchte ich alles erreichen? Bin ich auf dem richtigen Weg?"
+  "Was möchte ich alles erreichen? Bin ich auf dem richtigen Weg?",
+  "Stelle ich mir töglich eine neue Frage?",
+  "Habe ich ein Motto des Tages?",
+  "Mit welchem Gedanken wache ich morgens auf?",
+  "Was inspiriert mich?"
 ]
