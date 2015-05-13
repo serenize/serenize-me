@@ -20,7 +20,7 @@
 	<body>
 		<div class="container">
 			<div class="question-box">
-				<a href="javascript:generate()" onclick="javascript:generate()">
+				<a href="javascript:refresh()" onclick="javascript:refresh()">
 					<h1 id="question">Was ist das Problem?</h1>
 					<i class="fa fa-2x fa-refresh"></i>
 				</a>
@@ -45,7 +45,12 @@
 				headline.innerHTML = questions[randomNumber]
 			}
 
-			generate();
+			var refresh = function() {
+				generate()
+				ga('send', 'event', 'question', 'click', 'refresh')
+			}
+
+			generate()
 		</script>
 	</body>
 </html>
