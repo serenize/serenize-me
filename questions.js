@@ -127,7 +127,7 @@ var questions = [
   "Mit welchem Gedanken wache ich morgens auf?",
   "Was inspiriert mich?",
   "Führe ich durch Fragen oder durch Aufforderungen?",
-  "Wer könnte es besser manchen als ich?",
+  "Wer könnte es besser machen als ich?",
   "Bin ich alleine in der Lage mein Problem zu lösen oder brauche ich Hilfe?",
   "Mache ich ausreichend Pausen?",
   "Ist die Lösung dringend notwendig?",
