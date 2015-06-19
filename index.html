@@ -48,6 +48,7 @@
 			var refresh = function(event) {
 				event.preventDefault()
 				generate()
+				mouseOut()
 				ga('send', 'event', 'question', 'click', 'refresh')
 			}
 			
