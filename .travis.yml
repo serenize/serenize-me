@@ -1,0 +1,9 @@
+deploy:
+  provider: openshift
+  user: ben@serenize.com
+  password:
+    secure: UPGlIEC5tR2DKgpMYw6aL1fvYlkTHrCc8pQCsNFrRGokWcvv6fAR0iXYh0k/BKlFTK+lLcZRtpyG42KZNJI7/5hWeHa+CU6uKuJIVSZ8F3vJSJ5fuADwxlYZ5puDwIdINJtjkHvtbq1OOSRyamvWbgtO2A1AzM1Hq3tUqqN1vs8=
+  app: me
+  domain: serenize
+  on:
+    repo: serenize/serenize.github.io
