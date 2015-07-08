@@ -132,5 +132,6 @@ module.exports = [
   "Mache ich ausreichend Pausen?",
   "Ist die Lösung dringend notwendig?",
   "Wie hoch ist der Schaden, wenn ich das Problem nicht löse?",
-  "Tut es mir persönlich weh, wenn das Problem bestehen bleibt?"
+  "Tut es mir persönlich weh, wenn das Problem bestehen bleibt?",
+  "Geht es auch einfacher?"
 ];
