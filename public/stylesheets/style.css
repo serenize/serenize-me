@@ -21,7 +21,7 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: url("chess.jpg") center 20%;
+  background: url("/images/chess.jpg") center 20%;
   border: 1px solid #222;
 }
 
