@@ -1,4 +1,4 @@
-var questions = [
+module.exports = [
   "Worin besteht das Problem?",
   "Wann tritt das Problem auf?",
   "Welche Ressourcen habe ich momentan zur Verfügung um das Problem zu lösen?",
@@ -133,4 +133,4 @@ var questions = [
   "Ist die Lösung dringend notwendig?",
   "Wie hoch ist der Schaden, wenn ich das Problem nicht löse?",
   "Tut es mir persönlich weh, wenn das Problem bestehen bleibt?"
-]
+];

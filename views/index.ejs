@@ -2,9 +2,10 @@
 <html lang="de">
 	<head>
 		<title>Inspirierende Fragen - Serenize.me!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="style.css">
-		<script src="questions.js"></script>
+		<link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/promise.min.js"></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script>
@@ -21,7 +22,7 @@
 		<div class="container">
 			<div class="question-box">
 				<a href="#refresh" onclick="javascript:refresh(event)" onmouseover="javascript:mouseOver()" onmouseout="javascript:mouseOut()" title="Neue Frage anzeigen">
-					<h1 id="question">Was ist das Problem?</h1>
+          <h1 id="question"><%= question %></h1>
 					<i class="fa fa-2x fa-refresh"></i>
 				</a>
 			</div>
@@ -33,40 +34,44 @@
 				</div>
 				<div class="logo-container">
 					<a href="https://serenize.com">
-						<img src="logo.png" class="logo">
+						<img src="/images/logo.png" class="logo">
 					</a>
 				</div>
 			</footer>
 		</div>
 		<script>
-			var generate = function() {
-				var randomNumber = Math.floor(Math.random() * questions.length)
-				var headline = document.getElementById("question")
-				headline.innerHTML = questions[randomNumber]
+			var loadQuestion = function() {
+        promise.get('/api/question').then(function(error, text, xhr) {
+          var headline = document.getElementById("question");
+          if (error) {
+            headline.innerHTML = 'Warum ist unser Backend kaputt? ' + xhr.status;
+          } else {
+            var obj = JSON.parse(text);
+            headline.innerHTML = obj.question;
+          }
+        });
 			}
 
 			var refresh = function(event) {
-				event.preventDefault()
-				generate()
-				mouseOut()
-				ga('send', 'event', 'question', 'click', 'refresh')
-			}
-			
-			var getLink = function() {
-				return document.querySelector(".fa-refresh")
-			}
-			
-			var mouseOver = function() {
-				var link = getLink()
-				link.className = link.className + " fa-spin"
-			}
-			
-			var mouseOut = function() {
-				var link = getLink()
-				link.className = link.className.replace(" fa-spin", "")
+				event.preventDefault();
+				loadQuestion();
+				mouseOut();
+				ga('send', 'event', 'question', 'click', 'refresh');
 			}
 
-			generate()
+			var getLink = function() {
+				return document.querySelector(".fa-refresh");
+			}
+
+			var mouseOver = function() {
+				var link = getLink();
+				link.className = link.className + " fa-spin";
+			}
+
+			var mouseOut = function() {
+				var link = getLink();
+				link.className = link.className.replace(" fa-spin", "");
+			}
 		</script>
 	</body>
-</html>
+  <html>
