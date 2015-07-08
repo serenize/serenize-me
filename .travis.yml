@@ -11,4 +11,4 @@ deploy:
   app: me
   domain: serenize
   on:
-    repo: serenize/serenize.github.io
+    repo: serenize/serenize-me
