@@ -133,4 +133,4 @@ module.exports = [
   "Ist die Lösung dringend notwendig?",
   "Wie hoch ist der Schaden, wenn ich das Problem nicht löse?",
   "Tut es mir persönlich weh, wenn das Problem bestehen bleibt?"
-]
+];
